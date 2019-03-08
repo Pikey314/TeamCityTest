@@ -1,10 +1,8 @@
-package test.java.pk1;
+package pk1;
 
 
-import main.java.pk1.HelloPease;
-import junit.framework.*;
-//ffffff
-
+import junit.framework.Assert;
+import junit.framework.TestCase;
 
 public class  TestHelloPease extends TestCase {
   public void testSimpleMessage() {

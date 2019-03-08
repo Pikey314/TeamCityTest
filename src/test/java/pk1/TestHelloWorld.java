@@ -1,4 +1,4 @@
-package test.java.pk1;
+package pk1;
 
 //dfsfdfsfdsf
 //tester1
@@ -7,7 +7,6 @@ package test.java.pk1;
 //tester1
 //tester1
 
-import main.java.pk1.HelloWorld;
 import junit.framework.*;
 
 public class  TestHelloWorld extends TestCase {

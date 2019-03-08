@@ -1,4 +1,4 @@
-package main.java.pk1;
+package pk1;
 
 public class AnotherClass {
 	int myResult;
@@ -7,7 +7,7 @@ public class AnotherClass {
 	ClassForMath aaa;
 //test test
 	public int  AnotherClass(){
- ClassForMath math1 = new ClassForMath();
+  ClassForMath math1 = new ClassForMath();
   myResult1=math1.multiply(5, 6);
   return myResult1;
  

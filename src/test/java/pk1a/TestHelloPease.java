@@ -1,7 +1,7 @@
-package test.java.pk1a;
+package pk1a;
 
  //
-import main.java.pk1.HelloPease;
+import pk1.HelloPease;
 import junit.framework.*;
 //fffff
 public class  TestHelloPease extends TestCase {

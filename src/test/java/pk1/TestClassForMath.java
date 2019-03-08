@@ -1,8 +1,6 @@
-package test.java.pk1;
+package pk1;
 
-import main.java.pk1.ClassForMath;
-//import junit.framework.*;
-//dddddddddddddd
+
 
 import org.junit.Ignore;
 import org.junit.Test;
