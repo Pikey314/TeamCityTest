@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.v2018_2.*
 import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.maven
+import jetbrains.buildServer.configs.kotlin.v2018_2.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.v2018_2.triggers.vcs
 
 /*
@@ -29,6 +30,7 @@ version = "2018.2"
 project {
 
     buildType(TestBuildJava)
+    buildType(HelloWorld)
 }
 
 object TestBuildJava : BuildType({
@@ -48,6 +50,22 @@ object TestBuildJava : BuildType({
         }
     }
 
+    triggers {
+        vcs {
+        }
+    }
+})
+
+object HelloWorld : BuildType({
+    id("HelloWorld")
+    name = "HelloWorldBuildTest"
+    vcs {
+        root(DslContext.settingsRoot)
+    }
+    steps {
+        script {
+            scriptContent = "echo 'Hello world!'"
+        }}
     triggers {
         vcs {
         }
